@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/journal/bootstrap.min.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         
@@ -74,7 +74,7 @@
                     <h2 class="mb-5">Objetivo del modelo</h2>  <!-- NOMBRE DEL PRIMER TITULO-->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Identificar e implementar modelos matemáticos por medio del lenguaje de programación python. Así como visualizar el modelo de la pandemia actual por medio de gráficas.</h3> <!-- NOMBRE DEL PRIMER SUBTITULO-->
+                            <h3 class="mb-0">Implementar modelos matemáticos para analizar las medidas sociales de control en México y calificarlas en función de su efectividad.</h3> <!-- NOMBRE DEL PRIMER SUBTITULO-->
                         <div class="flex-shrink-0"><span class="text-primary"> <!--idea central--> </span></div> <!-- COLOCAR LA IDEA CENTRAL (OPCIONAL)-->
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary"> <!--idea central--> </span></div> <!-- COLOCAR LA IDEA CENTRAL (OPCIONAL)-->
@@ -86,7 +86,7 @@
                         <div class="flex-grow-1">
                             <p>A continuación anexamos un video en el cuál se resume nuestro proyecto. No obstante, te invitamos a continuar la lectura y conocer más a fondo las matemáticas detrás del COVID-19 en México..</p> <!-- INSERTAR TEXTO-->
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><!--inicia video--><iframe width="560" height="315" src="https://www.youtube.com/embed/eo2hjIGGo6E" frameborder="0" allow="accelerometer; 
+                        <div class="flex-shrink-0"><span class="text-primary"><!--inicia video--><iframe width="560" height="315" src="https://www.youtube.com/watch?v=5AVqunivAoM&feature=youtu.be" frameborder="0" allow="accelerometer; 
                             autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--termina video--> </span></div> <!-- COLOCAR LA IDEA CENTRAL (OPCIONAL)  CAMBIO POR VIDEO-->
                     </div>
                 </div>
@@ -103,8 +103,8 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Ideas para definir el problema</h3> <!-- NOMBRE DEL PRIMER SUBTITULO-->
                             <div class="subheading mb-3">Nos basamos en dos premisas importantes: </div> <!-- SUBTITULO DEL PRIMER SUBTITULO-->
-                            <div>1. Comparar la probabilidad de infección antes y después del inicio oficial de la etapa denominada: Nueva normalidad. Efectividad de aplicación de medidas por estado : Comparar cuánto tardaron en aplicar medidas cada estado y observar su probabilidad de contagio ..</div> <!-- INSERTAR TEXTO-->
-                            <p>Para ello acudimos a las Cadenas de Markov</p> <!-- INSERTAR SUBTEXTO-->
+                            <div>Necesitamos un modelo matemático para simular el progreso de la enfermedad en México. Este modelo debe ser capaz de considerar las medidas sociales empleadas por el país, dentro de sus variables y ajustarse a los datos oficiales. Por último se espera modificar el modelo para simular una realidad donde se hubieran tomado medidas de control más estrictas y otra donde no se hubieran tomado. Todo esto siempre dentro de una incertidumbre de 5 sigmas.</div> <!-- INSERTAR TEXTO-->
+                            <p>Para ello acudimos a dos principales modelos</p> <!-- INSERTAR SUBTEXTO-->
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary"> <!--idea central--> </span></div> <!-- COLOCAR LA IDEA CENTRAL (OPCIONAL)-->
                     </div>
@@ -136,22 +136,23 @@
                     <h2 class="mb-5">Resultados</h2>  <!-- NOMBRE DEL TERCER TITULO-->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Curva epidemológica calculada con el total de casos acumulados..</h3> <!-- NOMBRE DEL PRIMER SUBTITULO-->
-                            <div>En la siguiente gráfica se puede observar la curva de casos acumulados. Con esto queremos ver el comportamiento del virus antes de tomar las medidas oficiales establecidas en la nueva normalidad.</div> <!-- INSERTAR TEXTO-->
+                            <h3 class="mb-0">Curva epidemiológica considerando todos los casos confirmados hasta la fecha reportada.</h3> <!-- NOMBRE DEL PRIMER SUBTITULO-->
+                            <div>Se usó el modelo Gompertz para la siguiente gráfica.</div> <!-- INSERTAR TEXTO-->
                       <div align="center"><img src="https://lh4.googleusercontent.com/Q1epOYK5fVluOu_22n1EfHHYPQ5_mC-wj4tF-stq-4iQzMA9uHGoe1vAjfD8YCJiSx6eFTXm84KeZ3Xg4PiGSPEaI6oh6OwmywJXuuQav1yImbTHcic=w1280"></div>   <!-- PONER  IMAGENES CENTRADAS--> 
                     </div>
                         <div class="flex-shrink-0"><span class="text-primary"> <!--idea central--> </span></div> <!-- COLOCAR LA IDEA CENTRAL (OPCIONAL)-->
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Curva epidemiológica calculada con los casos diarios.</h3> <!-- NOMBRE DEL SEGUNDO SUBTITULO-->
+                            <h3 class="mb-0">Curva epidemiológica considerando los casos diarios confirmados.</h3> <!-- NOMBRE DEL SEGUNDO SUBTITULO-->
+                    <div>Se usó el modelo Gompertz para la siguiente gráfica.</div> <!-- INSERTAR TEXTO-->
                         <div align="center"><img src="https://lh3.googleusercontent.com/01FfgZeUUMapQohhY2GeiwQwGO3iMHvRbXFNjlZ6rIBofTocBC-dTIkeZUwWyUsJzP4U2kXO03vkIatCOdGtljAuk0c6G2_KI7GufOIU3n-WCWTzJeo=w1280"></div>   <!-- PONER  IMAGENES CENTRADAS--> 
 </div>
                         <div class="flex-shrink-0"><span class="text-primary"> <!--idea central--> </span></div> <!-- COLOCAR LA IDEA CENTRAL (OPCIONAL)-->
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                     <h3 class="mb-0">Modelo SEIR-AMA con intervención social</h3> <!-- NOMBRE DEL SEGUNDO SUBTITULO-->
+                     <h3 class="mb-0">Modelo SEIR-AMA simulado para cuantificar la efectividad de las medidas sociales.</h3> <!-- NOMBRE DEL SEGUNDO SUBTITULO-->
                             <p>En la siguiente gráfica se demuestra el comportamiento de la curva considerando tres situaciones potenciales según el nivel de intervención: medidas ligeras (menos intervención), medidas moderadas (más invertención) y medidas estrictas (aún más intervención). Es decir, ¿qué hubiera pasado si no se tomaran medidas de control?</p> <!-- INSERTAR TEXTO-->
                      <div align="center"><img src="https://lh6.googleusercontent.com/qA25BkoQ7_uSlUwRT0nmb0pSjbICe-dgQgjXK4wueh3WtJdN5xjshxFY-nb8MGAB9ftVulh0yE5wAA9JW1Z0Z36Osy9UizeoT-g3RSr2wTddF6lVEB90=w1280"></div>   <!-- PONER  IMAGENES CENTRADAS-->     
                     </div>
